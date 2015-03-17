@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/Response"
+        android:layout_width="299dp"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="17sp" />
+
+    <Button
+        android:id="@+id/btnConnect"
+        android:layout_width="78dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:text="Connect"
+        android:textSize="10sp" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="78dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="80dp"
+        android:text="室內溫度"
+        android:textSize="10sp"
+        android:onClick="Send"/>
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="78dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="80dp"
+        android:text="設定溫度"
+        android:textSize="10sp"
+        android:onClick="Send"/>
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="78dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="80dp"
+        android:text="設定風速"
+        android:textSize="10sp"
+        android:onClick="Send"/>
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="78dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="260dp"
+        android:layout_marginTop="80dp"
+        android:text="運轉模式"
+        android:textSize="10sp"
+        android:onClick="Send"/>
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="140dp"
+        android:text="室內風扇轉速"
+        android:textSize="10sp"
+        android:onClick="Send"/>
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="140dp"
+        android:text="防感溫器凍(EVA)"
+        android:textSize="10sp"
+        android:onClick="Send"/>
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="200dp"
+        android:text="故障履歷(即時)"
+        android:textSize="10sp"
+        android:onClick="Send"/>
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="200dp"
+        android:text="異常代碼"
+        android:textSize="10sp"
+        android:onClick="Send"/>
+
+
+
+</RelativeLayout>

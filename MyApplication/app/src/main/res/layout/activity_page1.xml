@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/Top"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:padding="0px"
+        android:src="@drawable/service_app"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/background">
+
+        <TextView
+            android:id="@+id/Welcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome"
+            android:textSize="55sp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="italic"
+            android:textColor="@color/button"/>
+        <TextView
+            android:id="@+id/App"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="服務APP "
+            android:textSize="50sp"
+            android:layout_marginRight="10dp"
+            android:textStyle="italic"
+            android:gravity="right"
+            android:textColor="@color/button"
+            android:layout_below="@id/Welcome"/>
+
+        <RadioGroup
+            android:id="@+id/rgroup1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/App">
+
+            <RadioButton
+                android:id="@+id/single"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:textSize="30sp"
+                android:textColor="@color/black"
+                android:text="一對一" />
+
+
+            <RadioButton
+                android:id="@+id/much"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:textColor="@color/black"
+                android:text="一對多" />
+
+        </RadioGroup>
+
+        <View
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/button"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/rgroup1"/>
+
+        <RadioGroup
+            android:id="@+id/rgroup2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/line1">
+
+            <RadioButton
+                android:id="@+id/indoor"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:textColor="@color/black"
+                android:text="室內機" />
+
+            <RelativeLayout
+                android:id="@+id/layout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/rgroup2">
+
+                <Button
+                    android:id="@+id/choose1"
+                    android:layout_width="95dp"
+                    android:layout_height="38dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="20dp"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:background="@drawable/choose2"
+                    android:onClick="createDialog"/>
+
+
+                <Button
+                    android:id="@+id/choose2"
+                    android:layout_width="80dp"
+                    android:layout_height="38dp"
+                    android:layout_marginLeft="110dp"
+                    android:layout_marginTop="20dp"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    android:gravity="center"
+                    android:enabled="false"
+                    android:background="@drawable/choose"
+                    android:onClick="createDialog"/>
+
+                <Button
+                    android:id="@+id/choose3"
+                    android:layout_width="80dp"
+                    android:layout_height="38dp"
+                    android:layout_marginLeft="210dp"
+                    android:layout_marginTop="20dp"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    android:gravity="center"
+                    android:enabled="false"
+                    android:background="@drawable/choose"
+                    android:onClick="createDialog"/>
+
+            </RelativeLayout>
+
+        </RadioGroup>
+
+        <View
+            android:id="@+id/line2"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/button"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/rgroup2"/>
+
+        <RadioGroup
+            android:id="@+id/rgroup3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/line2">
+
+            <RadioButton
+                android:id="@+id/outdoor"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:textColor="@color/black"
+                android:text="室外機" />
+            <RelativeLayout
+                android:id="@+id/layout3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:textColor="@color/black"
+                    android:text="RAM -"/>
+
+                <Button
+                    android:id="@+id/choose4"
+                    android:layout_width="80dp"
+                    android:layout_height="38dp"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="0dp"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    android:gravity="center"
+                    android:background="@drawable/choose"
+                    android:onClick="createDialog"/>
+
+                <Button
+                    android:id="@+id/choose5"
+                    android:layout_width="80dp"
+                    android:layout_height="38dp"
+                    android:layout_marginLeft="200dp"
+                    android:layout_marginTop="0dp"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    android:gravity="center"
+                    android:background="@drawable/choose"
+                    android:onClick="createDialog"/>
+
+            </RelativeLayout>
+
+        </RadioGroup>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/rgroup3">
+
+            <Button
+                android:id="@+id/clear"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/clear"/>
+
+            <Button
+                android:id="@+id/enter"
+                android:layout_width="150dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="0dp"
+                android:layout_toRightOf="@+id/clear"
+                android:background="@drawable/enter"/>
+
+        </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

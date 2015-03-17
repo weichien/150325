@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="number">
+
+        <item>50</item>
+
+        <item>63</item>
+
+        <item>71</item>
+
+        <item>83</item>
+
+        <item>86</item>
+
+        <item>93</item>
+
+        <item>108</item>
+
+        <item>139</item>
+
+
+    </string-array>
+</resources>
